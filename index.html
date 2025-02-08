@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RSA Encryption & Decryption</h1>
+
+        <div>
+            <h2>Input Values</h2>
+            <input type="number" id="p" placeholder="Enter prime number p">
+            <input type="number" id="q" placeholder="Enter prime number q">
+            <input type="number" id="e" placeholder="Enter public exponent e">
+            <input type="number" id="M" placeholder="Enter plaintext M">
+        </div>
+
+        <div class="result">
+            <h2>Key Generation</h2>
+            <p>n = p × q: <span id="nValue"></span></p>
+            <p>ϕ(n) = (p-1) × (q-1): <span id="phiValue"></span></p>
+            <p>Public Key: <span id="publicKey"></span></p>
+            <p>Private Key: <span id="privateKey"></span></p>
+        </div>
+
+        <div class="result">
+            <h2>Encryption</h2>
+            <p>Ciphertext (C): <span id="encryptedResult"></span></p>
+        </div>
+
+        <div class="result">
+            <h2>Decryption</h2>
+            <p>Decrypted Plaintext (M): <span id="decryptedResult"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
